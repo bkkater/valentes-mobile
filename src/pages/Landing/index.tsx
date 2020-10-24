@@ -1,11 +1,14 @@
 import React from 'react';
-import { View, Image } from 'react-native';
-import tailwind from 'tailwind-rn';
+import { View, Text, SafeAreaView } from 'react-native';
+import { tailwind } from '../../lib/styles'
 
 function Landing() {
     return (
-        <View style={tailwind('')}>
-        </View>
+        <SafeAreaView style={tailwind('flex-1 bg-primary-500')}>
+            <View style={tailwind('bg-red-500')}>
+                <Text style={tailwind('text-primary-500')}>Teste</Text>
+            </View>
+        </SafeAreaView>
     );
 }
 

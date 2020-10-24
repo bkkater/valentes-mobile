@@ -1,7 +1,7 @@
 {
   "name": "valentes-mobile",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "node_modules/expo/AppEntry.js",
   "license": "MIT",
   "dependencies": {
     "@expo-google-fonts/ubuntu": "^0.1.0",

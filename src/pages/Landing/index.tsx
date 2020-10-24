@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, SafeAreaView } from 'react-native';
-import { tailwind } from '../../lib/styles'
+import { tailwind } from '~/lib/styles'
 
 function Landing() {
     return (

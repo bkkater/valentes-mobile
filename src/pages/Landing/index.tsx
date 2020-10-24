@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Image } from 'react-native';
 
-function AppLoading() {
+function Landing() {
     return (
         <View>
         </View>
     );
 }
 
-export default AppLoading;
+export default Landing;

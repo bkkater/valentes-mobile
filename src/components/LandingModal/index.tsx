@@ -6,6 +6,7 @@ import miniLogo from '../../assets/mini-logo.png'
 
 import style from './styles'
 import { tailwind } from '../../lib/styles';
+import PrimaryButton from '../PrimaryButton';
 
 interface LandingModalProps {
 	readonly styles?: StyleProp<ViewStyle>
@@ -79,9 +80,7 @@ const LandingModal: React.FC<LandingModalProps> = ({ styles, modalVisible, setMo
 								<Text style={{ ...style.buttonText, color: '#333' }}>Voltar</Text>
 							</TouchableHighlight>
 
-							<TouchableHighlight style={style.button}>
-								<Text style={style.buttonText}>Continuar</Text>
-							</TouchableHighlight>
+							<PrimaryButton/>
 						</View>
 
 					</View>

@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Image } from 'react-native';
 import { Feather } from '@expo/vector-icons'; 
 
-import miniLogo from '../../assets/mini-logo.png'
+import miniLogo from '../../../assets/mini-logo.png'
 
 const Header: React.FC = () => {
   return (

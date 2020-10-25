@@ -86,5 +86,8 @@ const { tailwind, getColor } = create({
 
     elevation: 18,
   },
+  'bg-yellow-custom': {
+    backgroundColor: 'rgba(242, 140, 15, 0.2)'
+  }
 })
 export { tailwind, getColor }

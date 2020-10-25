@@ -1,16 +1,17 @@
 import * as React from 'react';
 import { useState } from 'react';
+import { StyleProp, ViewStyle } from 'react-native';
 import { TextInput, useTheme } from 'react-native-paper';
-import { TextInputMask } from 'react-native-masked-text';
 
 interface InputProps {
     label: string,
     type: string,
     keyboardtype: string,
     maxlength: number,
+    style?: StyleProp<ViewStyle>
 }
 
-const Input: React.FC<InputProps> = ({ label, type, keyboardtype, maxlength }, props) => {
+const Input: React.FC<InputProps> = ({ label, type, keyboardtype, maxlength, style }, props) => {
     const [value, setValue] = useState('');
     const { colors } = useTheme();
 
@@ -18,14 +19,16 @@ const Input: React.FC<InputProps> = ({ label, type, keyboardtype, maxlength }, p
         <TextInput
             {...props}
             label={label}
+            theme={colors.primary === "#fff"}
             value={value}
+            underlineColorAndroid="#fefe"
             onChangeText={value => setValue(value)}
-            style={{ backgroundColor: colors.text + "00", marginBottom: 20}}
-            underlineColor= '#B66604'
-            textContentType= {type}
+            style={[{ backgroundColor: colors.text + "00", marginBottom: 20 }, style]}
+            underlineColor='#B66604'
+            textContentType={type}
             keyboardType={keyboardtype}
-            secureTextEntry={type== 'password' ? true : false}
-            maxLength= {maxlength}
+            secureTextEntry={type == 'password' ? true : false}
+            maxLength={maxlength}
         />
     );
 }

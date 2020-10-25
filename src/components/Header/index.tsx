@@ -6,7 +6,7 @@ import miniLogo from '../../assets/mini-logo.png'
 
 const Header: React.FC = () => {
   return (
-      <View style={{marginTop: 16, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row'}}>
+      <View style={{marginTop: 40, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row'}}>
           <Image source={miniLogo}/>
           <Feather name="menu" size={24} color="black" />
       </View>

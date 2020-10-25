@@ -13,6 +13,15 @@ const styles = StyleSheet.create({
     },
     text: {
         fontFamily: 'Ubuntu_400Regular',
+    },
+    activeButtonStyle: {
+        padding: 5,
+        paddingRight: 30,
+        paddingLeft: 30,
+    },
+    buttomText: {
+        fontFamily: 'Ubuntu_400Regular',
+        fontSize: 17,
     }
 })
 

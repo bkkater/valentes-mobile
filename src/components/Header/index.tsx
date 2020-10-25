@@ -2,12 +2,12 @@ import React from 'react';
 import { View, Image } from 'react-native';
 import { Feather } from '@expo/vector-icons'; 
 
-import illustration from '../../assets/illustration.png'
+import miniLogo from '../../assets/mini-logo.png'
 
 const Header: React.FC = () => {
   return (
-      <View style={{marginTop: 20, alignItems: 'center', justifyContent: 'space-between'}}>
-          <Image source={illustration}/>
+      <View style={{marginTop: 16, alignItems: 'center', justifyContent: 'space-between', flexDirection: 'row'}}>
+          <Image source={miniLogo}/>
           <Feather name="menu" size={24} color="black" />
       </View>
   );

@@ -2,7 +2,7 @@ import React, { Dispatch, SetStateAction } from 'react'
 import { Modal, StyleProp, TouchableHighlight, View, Text, ViewStyle, Image } from 'react-native'
 import { Feather } from '@expo/vector-icons';
 import Input from '../Input'
-import miniLogo from '../../assets/mini-logo.png'
+import miniLogo from '../../../assets/mini-logo.png'
 
 import style from './styles'
 import { tailwind } from '../../lib/styles';

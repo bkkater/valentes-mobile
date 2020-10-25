@@ -7,6 +7,7 @@ import miniLogo from '../../assets/mini-logo.png'
 import style from './styles'
 import { tailwind } from '../../lib/styles';
 import PrimaryButton from '../PrimaryButton';
+import { useNavigation } from '@react-navigation/native';
 
 interface LandingModalProps {
 	readonly styles?: StyleProp<ViewStyle>
@@ -15,6 +16,13 @@ interface LandingModalProps {
 }
 
 const LandingModal: React.FC<LandingModalProps> = ({ styles, modalVisible, setModalVisible }) => {
+	const { navigate } = useNavigation();
+
+	const handleNavigateToHome = () => {
+		setModalVisible(!modalVisible)
+		navigate('Home')
+	}
+
 
 	return (
 		<View style={styles}>
@@ -80,7 +88,7 @@ const LandingModal: React.FC<LandingModalProps> = ({ styles, modalVisible, setMo
 								<Text style={{ ...style.buttonText, color: '#333' }}>Voltar</Text>
 							</TouchableHighlight>
 
-							<PrimaryButton/>
+							<PrimaryButton onPress={handleNavigateToHome}/>
 						</View>
 
 					</View>

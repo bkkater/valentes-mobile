@@ -4,6 +4,8 @@ import { Ubuntu_400Regular, Ubuntu_500Medium, Ubuntu_700Bold, useFonts } from '@
 import AppStack from './src/routes/AppStack';
 import AppLoading from './src/pages/AppLoading';
 import { Text } from 'react-native'
+import moment from 'moment';
+import 'moment/locale/pt-br'
 
 // @ts-ignore
 Text.defaultProps = Text.defaultProps || {}
@@ -11,6 +13,7 @@ Text.defaultProps = Text.defaultProps || {}
 Text.defaultProps.allowFontScaling = false
 
 export default function App() {
+  moment().locale('pt-br')
   let [fontLoaded] = useFonts({
     Ubuntu_400Regular,
     Ubuntu_500Medium,

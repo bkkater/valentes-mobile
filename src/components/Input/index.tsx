@@ -9,9 +9,10 @@ interface InputProps {
     keyboardtype: string,
     maxlength: number,
     style?: StyleProp<ViewStyle>
+    mockValue?: string
 }
 
-const Input: React.FC<InputProps> = ({ label, type, keyboardtype, maxlength, style }, props) => {
+const Input: React.FC<InputProps> = ({ label, mockValue, type, keyboardtype, maxlength, style }, props) => {
     const [value, setValue] = useState('');
     const { colors } = useTheme();
 
@@ -20,7 +21,7 @@ const Input: React.FC<InputProps> = ({ label, type, keyboardtype, maxlength, sty
             {...props}
             label={label}
             theme={colors.primary === "#fff"}
-            value={value}
+            value={mockValue || value}
             underlineColorAndroid="#fefe"
             onChangeText={value => setValue(value)}
             style={[{ backgroundColor: colors.text + "00", marginBottom: 20 }, style]}

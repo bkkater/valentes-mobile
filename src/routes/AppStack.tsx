@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import Landing from '../pages/Landing';
 import AppLoading from '../pages/AppLoading';
+import Home from '../pages/Home';
 
 const { Screen, Navigator } = createStackNavigator();
 
@@ -13,6 +14,7 @@ function AppStack() {
             <Navigator screenOptions={{ headerShown: false }}>
                 <Screen name='Landing' component={Landing} />
                 <Screen name="AppLoading" component={AppLoading} />
+                <Screen name="Home" component={Home} />
             </Navigator>
         </NavigationContainer>
     )

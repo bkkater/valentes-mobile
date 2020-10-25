@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import { View, Text, Image, TouchableHighlight } from 'react-native';
 import { Feather } from '@expo/vector-icons';
-
 import HelpContainer from '../../components/HelpContainer';
 
 import style from './styles'
 
-import logo from '../../assets/logo.png'
+import logo from '../../../assets/logo.png'
 import LandingModal from '../../components/LandingModal';
-
-
 
 function Landing() {
     const [modalVisible, setModalVisible] = useState(false);

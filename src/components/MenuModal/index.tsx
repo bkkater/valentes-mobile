@@ -13,8 +13,8 @@ interface MenuModalProps {
 }
 
 const MenuModal: React.FC<MenuModalProps> = ({ modalVisible, setModalVisible }) => {
-  const  {navigate} = useNavigation();
-  
+  const { navigate } = useNavigation();
+
   function handleNavigateToLanding() {
     setModalVisible(!modalVisible)
     navigate('Landing')
@@ -22,12 +22,12 @@ const MenuModal: React.FC<MenuModalProps> = ({ modalVisible, setModalVisible }) 
 
   return (
     <Modal
-      animationType="slide"
+      animationType="fade"
       transparent={true}
       visible={modalVisible}
       onRequestClose={() => setModalVisible(!modalVisible)}
     >
-      <View style={style.centeredView}>
+      <View style={[style.centeredView, { backgroundColor: "rgba(0,0,0,0.15)" }]}>
         <View style={style.modalView}>
           <Image source={logo} style={{ marginTop: 20, alignSelf: 'center', width: '80%', height: '20%', marginBottom: 20 }} />
 
@@ -50,15 +50,12 @@ const MenuModal: React.FC<MenuModalProps> = ({ modalVisible, setModalVisible }) 
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight underlayColor="#F3EDE0" onPress={() => setModalVisible(!modalVisible)} style={{marginTop: '170%'}}>
+          <TouchableHighlight underlayColor="#F3EDE0" onPress={() => setModalVisible(!modalVisible)} style={{ marginTop: '170%' }}>
             <View style={style.menuItem}>
               <Feather name="arrow-left" size={24} color="black" />
               <Text style={style.menuText}>Fechar</Text>
             </View>
           </TouchableHighlight>
-
-
-
         </View>
       </View>
     </Modal>

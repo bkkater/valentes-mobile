@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, ScrollView, TouchableHighlight, Image, ImageBackground, Modal } from 'react-native';
+import { View, Text, ScrollView, TouchableHighlight } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
 import DayCard from '../../components/DayCard';
@@ -7,12 +7,6 @@ import Header from '../../components/Header';
 import Apoio from '../../components/ActiveOption/Apoio';
 import Contato from '../../components/ActiveOption/Contato';
 import Duvidas from '../../components/ActiveOption/Dúvidas';
-
-import illustration from '../../../assets/illustration.png'
-import illustration02 from '../../../assets/illustration-2.png'
-import illustration03 from '../../../assets/illustration-3.png'
-
-
 
 import style from './styles';
 import { tailwind } from '../../lib/styles';
@@ -88,7 +82,9 @@ const Home: React.FC = () => {
             )}
       </View>
 
-      <MenuModal modalVisible={modalVisible} setModalVisible={setModalVisible} />
+      {modalVisible && (
+        <MenuModal modalVisible={modalVisible} setModalVisible={setModalVisible} />
+      )}
 
     </ScrollView>
   );

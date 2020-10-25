@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
     hr: {
         borderBottomWidth: 2,
         borderBottomColor: '#F2E2C4',
-        marginBottom: 30, 
-        marginTop: 10, 
+        marginBottom: 30,
+        marginTop: 10,
         borderRadius: 5,
 
         width: '80%',

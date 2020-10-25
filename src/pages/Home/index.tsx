@@ -44,11 +44,7 @@ const Home: React.FC = () => {
 
       <View style={{ flexDirection: 'row', marginTop: 30, marginBottom: 30, width: '100%', justifyContent: 'space-between' }}>
 
-        {/* {...style.activeButtonStyle, backgroundColor: '#F2E2C4',} */}
-        <TouchableHighlight>
-          <Text style={style.buttomText}>Apoio</Text>
-        </TouchableHighlight>
-        
+        {/* {...style.activeButtonStyle, backgroundColor: '#F2E2C4',} */}   
         <TouchableHighlight >
           <Text style={style.buttomText}>Apoio</Text>
         </TouchableHighlight>

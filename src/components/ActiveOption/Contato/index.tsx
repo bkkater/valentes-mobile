@@ -36,7 +36,7 @@ const Contato: React.FC = () => {
               <Feather name="arrow-right" size={18} color="#B66604" style={{ alignSelf: 'flex-end', marginTop: -5 }} />
               <View style={style.hr} />
             </View>
-            <Image source={illustration} style={{ position: 'absolute', bottom: -50, left: -20, zIndex: 1 }} />
+            <Image source={illustration} style={{marginTop: -220}}/>
           </View>
     );
 }

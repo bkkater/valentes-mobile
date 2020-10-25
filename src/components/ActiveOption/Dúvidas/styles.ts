@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         marginTop: 8,
     },
     inputContainer: {
-
+        marginTop: -10
     },
     icon: {
         position: "absolute",
@@ -33,8 +33,10 @@ const styles = StyleSheet.create({
         right: 10
     },
     title: {
-        fontFamily: 'Ubuntu_400Regular',
+        fontFamily: 'Ubuntu_500Medium',
         fontSize: 17,
+        marginBottom: 15,
+        marginTop: 15
     }
 })
 

@@ -68,12 +68,39 @@ const Home: React.FC = () => {
       </View>
       <View>
         {activeOption === "01" ? (
-          <View>
-            <Text>Apoio Container</Text>
+          <View style={style.primaryContainer}>
+            <Text style={style.primaryContainerTitle}>Dicas</Text>
+            <Text style={style.primaryContainerDescription}>Informe-se sobre o seu diagnóstico, direitos e outras dicas sobre qualidade de vida</Text>
+
+            <Feather name="arrow-right" size={18} color="#B66604" style={{ alignSelf: 'flex-end' }} />
+            <View style={style.hr} />
+
           </View>
         ) : activeOption === "02" ? (
           <View>
-            <Text>Contatos Container</Text>
+            <View style={style.primaryContainer}>
+              <Text style={style.primaryContainerTitle}>Outros pais e reponsáveis</Text>
+
+              <Feather name="arrow-right" size={18} color="#B66604" style={{ alignSelf: 'flex-end' }} />
+              <View style={style.hr} />
+
+            </View>
+
+            <View style={style.primaryContainer}>
+              <Text style={style.primaryContainerTitle}>Oncologistas</Text>
+
+              <Feather name="arrow-right" size={18} color="#B66604" style={{ alignSelf: 'flex-end' }} />
+              <View style={style.hr} />
+
+            </View>
+
+            <View style={style.primaryContainer}>
+              <Text style={style.primaryContainerTitle}>Hospitais e centros de tratamento</Text>
+
+              <Feather name="arrow-right" size={18} color="#B66604" style={{ alignSelf: 'flex-end' }} />
+              <View style={style.hr} />
+
+            </View>
           </View>
         ) : (
               <View>

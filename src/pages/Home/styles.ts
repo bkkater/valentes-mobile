@@ -22,7 +22,29 @@ const styles = StyleSheet.create({
     buttomText: {
         fontFamily: 'Ubuntu_400Regular',
         fontSize: 17,
+    },
+    primaryContainer: {
+        padding: 20,
+        backgroundColor: 'rgba(242, 140, 15, 0.26)',
+        borderRadius: 5
+    },
+    hr: {
+        borderBottomColor: '#B66604',
+        borderBottomWidth: 1,
+        marginTop: 10
+    },
+    primaryContainerTitle: {
+        fontFamily: 'Ubuntu_400Regular',
+        fontSize: 17,
+        marginBottom: 8,
+        color: '#333'
+    },
+    primaryContainerDescription: {
+        fontFamily: 'Ubuntu_400Regular',
+        fontSize: 15,
+        color: '#333'
     }
+
 })
 
 export default styles;
